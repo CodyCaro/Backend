@@ -7,10 +7,10 @@ const artRoutes = require('./config/art-routes');
 const server = express();
 
 server.use(helmet());
-server.use(cors());
 server.use(express.json());
 server.use('/auth',  authRoutes );
 server.use('/art', authenticate, artRoutes);
+server.use(cors());
 
 
 server.get('/', (req, res) => {
@@ -19,3 +19,4 @@ server.get('/', (req, res) => {
 
 
 module.exports = server;
+
