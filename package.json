@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Build-Week-Arp/Backend#readme",
   "dependencies": {
+    "node-linux-x64": "*",
     "axios": "^0.19.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
